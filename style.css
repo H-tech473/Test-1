@@ -1,0 +1,434 @@
+:root {
+  --color11: #091353;
+  --color12: #9D84B7;
+  --color13: #D5D5D5;
+  --color14: #B2F9FC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+  color: var(--color11);
+  -webkit-perspective: 1500;
+          perspective: 1500;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: var(--color14);
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .timer {
+  position: absolute;
+  height: 5rem;
+  width: 15rem;
+  background-color: var(--color11);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--color13);
+  top: 1rem;
+  left: 1rem;
+  border-radius: 2.5rem;
+  font-size: 1.5rem;
+}
+
+body .bigwrapper {
+  height: 25rem;
+  overflow: hidden;
+  width: 70rem;
+  z-index: 1;
+  position: relative;
+}
+
+body .bigwrapper .book {
+  background-color: var(--color12);
+  height: 25rem;
+  width: 48rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .bigwrapper .book .left-2 {
+  height: 23rem;
+  left: 1rem;
+  top: 1rem;
+  background-color: var(--color13);
+  position: relative;
+  width: 23rem;
+  border-right: 0.1rem solid rgba(0, 0, 0, 0.582);
+}
+
+body .bigwrapper .book .left-2 .no {
+  position: relative;
+  left: 2rem;
+  top: 4rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+body .bigwrapper .book .left-2 .no .no1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  background-color: var(--color12);
+  width: 3rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+
+body .bigwrapper .book .left-2 .no .no2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 5rem;
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body .bigwrapper .book .left-2 .no .no2 span {
+  -webkit-transform: translateZ(-30rem) rotateZ(45deg);
+          transform: translateZ(-30rem) rotateZ(45deg);
+  display: inline-block;
+  -webkit-filter: blur(0.2rem);
+          filter: blur(0.2rem);
+  opacity: .6;
+}
+
+body .bigwrapper .book .left-2 p {
+  top: 8rem;
+  position: absolute;
+  border: 0.2rem solid var(--color12);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  overflow: auto;
+  word-wrap: normal;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+}
+
+body .bigwrapper .book .left-2 p img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+body .bigwrapper .book .left-2 .clear {
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  height: 3rem;
+  text-align: right;
+  line-height: 3rem;
+  font-size: 1.2rem;
+  padding-right: 1rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  top: 2rem;
+  width: 11rem;
+  background-color: var(--color11);
+  color: var(--color13);
+}
+
+body .bigwrapper .book .left-2 .clear:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+body .bigwrapper .book .right-1 {
+  height: 23rem;
+  left: 1rem;
+  top: 1rem;
+  background-color: var(--color13);
+  position: relative;
+  width: 23rem;
+  padding: 2rem;
+  border-left: 0.1rem solid rgba(0, 0, 0, 0.582);
+}
+
+body .bigwrapper .book .right-1 form {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}
+
+body .bigwrapper .book .right-1 .submit, body .bigwrapper .book .right-1 .done {
+  left: 0;
+  position: absolute;
+  height: 3rem;
+  text-align: left;
+  line-height: 3rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  bottom: 2rem;
+  width: 11rem;
+  background-color: var(--color11);
+  color: var(--color13);
+}
+
+body .bigwrapper .book .right-1 .submit:hover, body .bigwrapper .book .right-1 .done:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+body .bigwrapper .book .right-1 .choice-box {
+  height: 16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 1rem;
+  position: absolute;
+  width: 15rem;
+}
+
+body .bigwrapper .book .right-1 .choice-box .ch {
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  height: 4rem;
+  cursor: pointer;
+  padding: 1rem;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+}
+
+body .bigwrapper .book .right-1 .choice-box .chsel {
+  background-color: var(--color11);
+  color: var(--color12);
+}
+
+body .bigwrapper .book .numbered {
+  position: absolute;
+  left: calc(100% - 1rem);
+  top: 4rem;
+  height: 23rem;
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .bigwrapper .book .numbered .nn {
+  background-color: var(--color13);
+  width: 6rem;
+  height: 4rem;
+  pointer-events: none;
+  text-align: center;
+  font-weight: 800;
+  line-height: 3.2rem;
+  font-size: 1.5rem;
+  margin-top: .2rem;
+  border-top-right-radius: 2rem;
+  border: 0.4rem solid var(--color12);
+  border-bottom-right-radius: 2rem;
+}
+
+body .bigwrapper .book .numbered .selected {
+  font-size: 2.4rem;
+  width: 7rem;
+}
+
+body .bigwrapper .book .up {
+  height: 3rem;
+  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  left: 4rem;
+  cursor: pointer;
+}
+
+body .bigwrapper .book .up .tri {
+  top: 0;
+  height: 50%;
+  width: 100%;
+  position: relative;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: var(--color12);
+}
+
+body .bigwrapper .book .up .rect {
+  bottom: 0;
+  height: 50%;
+  width: 40%;
+  left: 30%;
+  position: relative;
+  background-color: var(--color12);
+}
+
+body .bigwrapper .book .down {
+  height: 3rem;
+  width: 2rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 50rem;
+  bottom: 0;
+}
+
+body .bigwrapper .book .down .tri {
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  position: relative;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+  background-color: var(--color12);
+}
+
+body .bigwrapper .book .down .rect {
+  top: 0;
+  height: 50%;
+  width: 40%;
+  left: 30%;
+  position: relative;
+  background-color: var(--color12);
+}
+
+body .side {
+  right: 0;
+  background-color: var(--color12);
+  height: 8rem;
+  pointer-events: none;
+  position: absolute;
+  width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .side .top, body .side .ques {
+  font-size: 1.4rem;
+  background-color: var(--color13);
+  height: 6rem;
+  width: 9rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .foot {
+  background-color: var(--color12);
+  position: absolute;
+  bottom: -11rem;
+  right: 2rem;
+  border-radius: 50% 50% 70% 30% / 62% 55% 45% 38%;
+  height: 20rem;
+  width: 20rem;
+  font-size: 1.3rem;
+  pointer-events: none;
+  padding-left: 3rem;
+  padding-top: 4rem;
+}
+
+body .foot .towrite {
+  position: absolute;
+  top: 2rem;
+  left: -.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */

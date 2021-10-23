@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="timer"></div>
+    <div class="bigwrapper">
+        <div class="book">
+            <div class="left-1"></div>
+            <div class="left-2">
+                <div class="no">
+                    <div class="no1"></div>
+                    <div class="no2"><span></span></div>
+                </div>
+                <p></p>
+                <div class="clear">Clear selection</div>
+            </div>
+            <div class="right-1">
+                <div class="choice-box">
+                    <div class="ch1 ch"></div>
+                    <div class="ch2 ch"></div>
+                    <div class="ch3 ch"></div>
+                    <div class="ch4 ch"></div>
+                </div>
+                <div class="submit">Submit selection</div>
+                <form action="" method="post">
+                    <input type="text" style="display: none; pointer-events: none;" class="time" name="time">
+                    <input type="text" style="display: none; pointer-events: none;" class="qq" name="questionss">
+                    <input type="text" style="display: none; pointer-events: none;" class="option" name="optionss">
+                    <input type="text" style="display: none; pointer-events: none;" class="ans" name="ans">
+                    <button type="submit" class="done">Done</button>
+                </form>
+            </div>
+                <div class="numbered">
+                </div>
+                <div class="up">
+                    <div class="tri"></div>
+                    <div class="rect"></div>
+                </div>
+                <div class="down">
+                    <div class="rect"></div>
+                    <div class="tri"></div>
+                </div>
+        </div>
+    </div>
+    <div class="side">
+        <div class="top">
+            <div class="answered">Answered</div>
+            <div class="unanswered">Unanswered</div>
+        </div>
+        <div class="ques">
+            <div class="answeredq"></div>
+            <div class="unansweredq"></div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="towrite">Marks avail as :</div>
+        Right answer :  +2.00 <br>
+        Wrong answer :  -0.50 <br>
+        Left unansered :  0.00
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
